@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HelloShanghai - 智游上海</title>
+    
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,38 +19,47 @@
                 <option value="th">ภาษาไทย</option>
             </select>
         </div>
-        <h1>HelloShanghai - 智游上海</h1>
+        <h1 id="header-title">智游上海</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="搜索..." class="search-box">
+        </div>
     </header>
 
     <!-- 轮播图 -->
     <section id="carousel">
         <div class="carousel-images">
-            <img src="Shanghai4.jpg" alt="Shanghai Skyline" class="carousel-item">
-            <img src="Shanghai5.jpg" alt="The Bund" class="carousel-item">
-            <img src="Shanghai6.jpg" alt="Shanghai Tower" class="carousel-item">
+            <img src="Shanghai9.jpg" alt="Shanghai Skyline" class="carousel-item">
+            <img src="Shanghai7.jpg" alt="The Bund" class="carousel-item">
+            <img src="Shanghai8.jpg" alt="Shanghai Tower" class="carousel-item">
         </div>
     </section>
 
     <!-- 导航选项 -->
     <nav class="menu">
         <ul>
-            <li><a href="#attractions">景区景点</a></li>
-            <li><a href="#museums">博物馆</a></li>
-            <li><a href="#entertainment">娱乐场所</a></li>
-            <li><a href="#hotels">酒店</a></li>
-            <li><a href="#parks">公园</a></li>
+            <li><a href="#attractions" id="attractions-link">景区景点</a></li>
+            <li><a href="#museums" id="museums-link">博物馆</a></li>
+            <li><a href="#entertainment" id="entertainment-link">娱乐场所</a></li>
+            <li><a href="#hotels" id="hotels-link">酒店</a></li>
+            <li><a href="#parks" id="parks-link">公园</a></li>
         </ul>
     </nav>
 
     <!-- 热门和推荐景点 -->
     <section id="popular-recommended">
         <div class="box">
-            <h2>热门景点</h2>
-            <p>推荐上海必去的景点...</p>
+            <h2 id="popular-title">热门景点</h2>
+            <div class="attraction">
+                <img src="Disneyland.jpg" alt="Shanghai Disneyland" class="attraction-img">
+                <p id="disneyland-description">上海迪士尼：上海的梦幻乐园，适合全家游玩，提供各类游乐设施和娱乐表演。</p>
+            </div>
         </div>
         <div class="box">
-            <h2>推荐景点</h2>
-            <p>根据个人兴趣推荐的景点...</p>
+            <h2 id="recommended-title">推荐景点</h2>
+            <div class="attraction">
+                <img src="Yuyuan1.JPG" alt="Yuyuan Garden" class="attraction-img">
+                <p id="yuyuan-description">豫园：上海著名的古典园林，具有浓厚的江南园林特色，游客可以欣赏古典建筑和美丽的花园。</p>
+            </div>
         </div>
     </section>
 
@@ -55,11 +67,11 @@
     <footer>
         <div class="footer-menu">
             <ul>
-                <li><a href="#places">场所</a></li>
-                <li><a href="#notes">笔记</a></li>
-                <li><a href="#map">地图</a></li>
-                <li><a href="#info">信息</a></li>
-                <li><a href="#my">我的</a></li>
+                <li><a href="#places" id="places-link">场所</a></li>
+                <li><a href="#notes" id="notes-link">笔记</a></li>
+                <li><a href="#map" id="map-link" class="map-option">地图 <img src="Earth-icon.PNG" alt="Earth Icon" class="map-icon"></a></li>
+                <li><a href="#info" id="info-link">信息</a></li>
+                <li><a href="#my" id="my-link">我的</a></li>
             </ul>
         </div>
     </footer>
