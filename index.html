@@ -3,64 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HelloShanghai</title>
+    <title>HelloShanghai - 智游上海</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>欢迎来到我们的旅游导览</h1>
-        <nav>
-            <ul>
-                <li><a href="#destinations">旅游目的地</a></li>
-                <li><a href="#tours">精选旅游路线</a></li>
-                <li><a href="#contact">联系我们</a></li>
-            </ul>
-        </nav>
+        <div class="language-selector">
+            <select id="language" onchange="changeLanguage()">
+                <option value="zh">中文</option>
+                <option value="ja">日本語</option>
+                <option value="en">English</option>
+                <option value="th">ภาษาไทย</option>
+            </select>
+        </div>
+        <h1>HelloShanghai - 智游上海</h1>
     </header>
 
-    <section id="destinations">
-        <h2>热门旅游目的地</h2>
-        <div class="destination">
-            <h3>巴黎</h3>
-            <p>埃菲尔铁塔和浪漫的塞纳河。</p>
-        </div>
-        <div class="destination">
-            <h3>京都</h3>
-            <p>传统的寺庙和美丽的樱花。</p>
-        </div>
-        <div class="destination">
-            <h3>巴厘岛</h3>
-            <p>海滩和热带度假胜地。</p>
+    <!-- 轮播图 -->
+    <section id="carousel">
+        <div class="carousel-images">
+            <img src="Shanghai4.jpg" alt="Shanghai Skyline" class="carousel-item">
+            <img src="Shanghai5.jpg" alt="The Bund" class="carousel-item">
+            <img src="Shanghai6.jpg" alt="Shanghai Tower" class="carousel-item">
         </div>
     </section>
 
-    <section id="tours">
-        <h2>精选旅游路线</h2>
-        <div class="tour">
-            <h3>巴黎市区一日游</h3>
-            <p>参观埃菲尔铁塔、卢浮宫和圣母院。</p>
+    <!-- 导航选项 -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#attractions">景区景点</a></li>
+            <li><a href="#museums">博物馆</a></li>
+            <li><a href="#entertainment">娱乐场所</a></li>
+            <li><a href="#hotels">酒店</a></li>
+            <li><a href="#parks">公园</a></li>
+        </ul>
+    </nav>
+
+    <!-- 热门和推荐景点 -->
+    <section id="popular-recommended">
+        <div class="box">
+            <h2>热门景点</h2>
+            <p>推荐上海必去的景点...</p>
         </div>
-        <div class="tour">
-            <h3>京都文化之旅</h3>
-            <p>参观金阁寺、清水寺和岚山。</p>
+        <div class="box">
+            <h2>推荐景点</h2>
+            <p>根据个人兴趣推荐的景点...</p>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>联系我们</h2>
-        <p>如果您有任何问题，欢迎通过以下方式联系我们。</p>
-        <form>
-            <label for="name">名字:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email">邮箱:</label>
-            <input type="email" id="email" name="email" required><br>
-            <textarea id="message" name="message" placeholder="留言" required></textarea><br>
-            <button type="submit">发送</button>
-        </form>
-    </section>
-
+    <!-- 底部导航 -->
     <footer>
-        <p>&copy; 2025 旅游导览公司</p>
+        <div class="footer-menu">
+            <ul>
+                <li><a href="#places">场所</a></li>
+                <li><a href="#notes">笔记</a></li>
+                <li><a href="#map">地图</a></li>
+                <li><a href="#info">信息</a></li>
+                <li><a href="#my">我的</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
