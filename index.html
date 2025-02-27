@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旅游导览网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我们的旅游导览</h1>
+        <nav>
+            <ul>
+                <li><a href=" ">旅游目的地</a ></li>
+                <li><a href="#tours">精选旅游路线</a ></li>
+                <li><a href="#contact">联系我们</a ></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="destinations">
+        <h2>热门旅游目的地</h2>
+        <div class="destination">
+            <h3>巴黎</h3>
+            <p>埃菲尔铁塔和浪漫的塞纳河。</p >
+        </div>
+        <div class="destination">
+            <h3>京都</h3>
+            <p>传统的寺庙和美丽的樱花。</p >
+        </div>
+        <div class="destination">
+            <h3>巴厘岛</h3>
+            <p>海滩和热带度假胜地。</p >
+        </div>
+    </section>
+
+    <section id="tours">
+        <h2>精选旅游路线</h2>
+        <div class="tour">
+            <h3>巴黎市区一日游</h3>
+            <p>参观埃菲尔铁塔、卢浮宫和圣母院。</p >
+        </div>
+        <div class="tour">
+            <h3>京都文化之旅</h3>
+            <p>参观金阁寺、清水寺和岚山。</p >
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>联系我们</h2>
+        <p>如果您有任何问题，欢迎通过以下方式联系我们。</p >
+        <form>
+            <label for="name">名字:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">邮箱:</label>
+            <input type="email" id="email" name="email" required><br>
+            <textarea id="message" name="message" placeholder="留言" required></textarea><br>
+            <button type="submit">发送</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 旅游导览公司</p >
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
